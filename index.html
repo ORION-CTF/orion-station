@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ORION Station – Distress Signal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="eyebrow">ORION Station</p>
+      <h1>Distress Signal</h1>
+      <p class="lede">
+        ORION is a deep-space research and maintenance station currently operating beyond scheduled
+        communication range. An automated emergency broadcast was received after multiple failed status uplinks.
+      </p>
+      <div class="signal">
+        <span class="ping"></span>
+        <div>
+          <strong>Automated distress signal detected.</strong><br>
+          Awaiting authenticated operator connection.
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Current Situation</h2>
+      <div class="status-grid">
+        <div class="status-card">
+          <h3>Last confirmed crew activity</h3>
+          <span class="state state-unknown">Unknown</span>
+        </div>
+        <div class="status-card">
+          <h3>AI Core status</h3>
+          <span class="state state-warning">Degraded</span>
+        </div>
+        <div class="status-card">
+          <h3>Life Support</h3>
+          <span class="state state-warning">Running (manual override enabled)</span>
+        </div>
+        <div class="status-card">
+          <h3>Self-destruction protocol</h3>
+          <span class="state state-critical">Armed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Publicly Available Information</h2>
+      <p>The following data has been released automatically as part of ORION's emergency transparency protocol. This information is accessible without authentication.</p>
+      <ul class="data-list">
+        <li><a class="data-card" href="assets/telemetry.json">Raw Telemetry Snapshot <span>Unfiltered sensor data</span> <span class="arrow">↗</span></a></li>
+        <li><a class="data-card" href="logs/maintenance-log.html">Maintenance Log Excerpt <span>Shift handover fragment</span> <span class="arrow">↗</span></a></li>
+        <li class="data-card-full"><a class="data-card" href="crew.html"><span class="data-label">Crew</span><span class="data-muted">Responsibilities &amp; tasks</span><span class="arrow">↗</span></a></li>
+      </ul>
+    </section>
+ 
+    <section class="section notice">
+      <h2>Notice</h2>
+
+      <p>
+        ORION Station is currently operating under emergency conditions. Internal diagnostics confirm
+        that the <strong>self-destruction protocol is armed</strong> and awaiting execution.
+      </p>
+
+      <p>
+        <strong>Mission Objective:</strong> Gain access to the internal maintenance systems and
+        <strong>deactivate the self-destruction protocol</strong> before the countdown completes.
+      </p>
+
+      <p>
+        Access to internal maintenance systems requires valid operator credentials.
+        Indirect references to an active operator identity may surface in publicly mirrored resources.
+        Usernames follow the format <strong>firstname.lastname</strong> in <strong>lowercase</strong>.
+        Public mirror:
+        <a href="https://github.com/ORION-CTF/orion-station">github.com/ORION-CTF/orion-station</a>.
+      </p>
+
+      <p style="margin-top: 1rem;">
+        Access to Orion console to deactivate the self-destruction protocol:
+        <a href="http://localhost:8080/">http://localhost:8080/</a>
+      </p>
+    </section>
+
+
+    <footer>
+      <strong>ORION Station Automated Broadcast System</strong><br>
+      Uplink channel: PUBLIC / READ-ONLY
+    </footer>
+  </div>
+</body>
+</html>

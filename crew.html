@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ORION Station — Crew Presentation</title>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    /* Crew layout tweaks on top of the shared theme */
+    .crew-list { display: grid; gap: 1.5rem; }
+
+    .crew-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--panel);
+      padding: 1.25rem;
+    }
+
+    .crew-name {
+      margin: 0 0 0.75rem;
+      color: #eaf3ff;
+      font-size: 1.2rem;
+    }
+
+    .crew-row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .crew-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      object-position: center 38%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.25);
+    }
+
+    .crew-text {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 700px) {
+      .crew-row { grid-template-columns: 1fr; }
+      .crew-photo { width: 100%; height: 240px; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+<header class="section">
+  <p class="eyebrow">ORION STATION / PUBLIC DOSSIER</p>
+  <h1>CREW PRESENTATION</h1>
+  <p class="lede">
+    Public-facing crew profiles for the ORION Station mission cycle.
+    All entries mirror the badge identifiers issued to each role to keep public logs consistent.
+  </p>
+</header>
+
+<section class="section">
+<h2>Mission Crew</h2>
+
+<div class="crew-list">
+
+<!-- 1) Chief Engineer - Bear Force -->
+<div class="crew-card">
+<h3 class="crew-name">Bear-Force</h3>
+<div class="crew-row">
+<img class="crew-photo" src="assets/img/Bear-Force.png" alt="Bear Force crew badge" />
+<div>
+<p class="crew-text"><strong>Responsibilities:</strong> Heavy maintenance: hull integrity, EVA rigging, pressure bulkheads, reactor bypass channels.</p>
+<p class="crew-text"><strong>Tasks:</strong> Lead containment teams during breach drills, supervise cold-works on external plates, certify temporary bracing before full repairs, maintain manual checklists for all high-risk interventions.</p>
+</div>
+</div>
+</div>
+
+<!-- 2) Communications Lead - Dolphin Unit -->
+<div class="crew-card">
+<h3 class="crew-name">Dolphin-Unit</h3>
+<div class="crew-row">
+<img class="crew-photo" src="assets/img/Dolphin-Unit.png" alt="Dolphin Unit crew badge" />
+<div>
+<p class="crew-text"><strong>Responsibilities:</strong> Comms maintenance: long-range array tuning, relay alignment, signal recovery, telemetry sanity checks.</p>
+<p class="crew-text"><strong>Tasks:</strong> Rebuild degraded links after radiation spikes, rotate encryption keys for public mirrors, manage translation relays for external stakeholders, document fallback handshakes for emergency uplinks.</p>
+</div>
+</div>
+</div>
+
+<!-- 3) Security & Ops - Lion Squad -->
+<div class="crew-card">
+<h3 class="crew-name">Lion-Squad</h3>
+<div class="crew-row">
+<img class="crew-photo" src="assets/img/Lion-Squad.png" alt="Lion Squad crew badge" />
+<div>
+<p class="crew-text"><strong>Responsibilities:</strong> Security maintenance: access governance, patrol routing, compartment lockdown hardware, incident response tooling.</p>
+<p class="crew-text"><strong>Tasks:</strong> Inspect and seal hatch actuators, validate sudo whitelists on maintenance consoles, rehearse boarding denial drills, coordinate with AI Core when critical flags trigger to keep life-support lines isolated.</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+  <strong>ORION Station Automated Broadcast System</strong><br>
+  Uplink channel: PUBLIC / READ-ONLY
+</footer>
+
+</div>
+</body>
+</html>
